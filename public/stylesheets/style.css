@@ -1,0 +1,57 @@
+body{
+
+	font-family: "calibri";
+	background: #C8E1FF;
+}
+
+legend {
+	font-size: 30px;
+	color: #64707F;
+}
+
+fieldset{
+
+	margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-color: #323840;
+}
+
+h1{
+	margin-left: 10%;
+    margin-right: auto;
+    color: #323840;
+    font-size: 40px;
+}
+
+input {
+    font-size: 11px;
+}
+
+label {
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    font-size: 30px;
+    color:#96A8BF;
+    background-color:#323840;
+    border:1px solid #64707F;
+}
+
+.submit_button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: right;
+}
+
+#ajaxResponse {
+    text-align: right;
+    font-size: 20px;
+
+}
+
+
+
+

@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js', type='text/javascript')
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js', type='text/javascript')
+    script(type='text/javascript', src='/javascripts/userLocation.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Deco-Garden
+  body
+    h1 Tramitación de pedido
+    form(action='/payment', method='post')
+      fieldset
+        legend Datos comprador
+        label(for='name') Nombre
+        br
+        input#name(type='text', name='name', placeholder='Introduzca su nombre')
+        br
+        label(for='surname') Apellidos
+        br
+        input#surname(type='text', name='surname', placeholder='Introduzca sus apellidos', size='40')
+        br
+        label(for='email') Correo electrónico
+        br
+        input#email(type='email', name='email', placeholder='example@example.com')
+        br
+        label(for='phone') Teléfono
+        br
+        input#phone(type='tel', name='phone', placeholder='e.g. (+34)677777777')
+      fieldset
+        legend Dirección de envío
+        label(for='street')
+          | Calle
+          label
+            br
+            input#street(type='text', name='street', placeholder='Paseo, calle, avenida...')
+            br
+            label(for='number') Nº
+            input#number(type='text', name='number', size='3')
+            label(for='floor') Piso
+            input#floor(type='text', value='', name='floor', size='3')
+            label(for='door') Puerta
+            input#door(type='text', value='', name='door', size='3')
+            br
+            label(for='city') Ciudad
+            br
+            input#city(type='text', name='city', size='30', placeholder='e.g. Puerto Santa María')
+            br
+            label(for='state') Provincia
+            br
+            input#state(type='text', name='state', placeholder='e.g. Cádiz')
+            br
+            label(for='country') País
+            br
+            input#country(type='text', name='country', placeholder='e.g. España')
+            br
+            label(for='cp') Código postal
+            br
+            input#cp(type='text', name='cp', placeholder='e.g. 11500')
+      fieldset
+        legend Medio de pago
+        label(for='titular') Titular de la tarjeta
+        input#titular(type='text', name='titular', size='40')
+        br
+        label(for='tarjeta') Numero de tarjeta
+        br
+        input#tarjeta(type='text', name='tarjeta')
+        br
+        label Fecha de caducidad
+        br
+        input#mes(type='text', name='mes', size='3')
+        |     -
+        input#year(type='text', name='year', size='3')
+        br
+        label(for='ccv') CCV/CVC
+        br
+        input#ccv(type='text', name='ccv', size='3')
+        br
+        #ajaxResponse(value='')
+      br
+      .submit_button
+        input(type='submit', value='Continuar')

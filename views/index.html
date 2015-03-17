@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/javascripts/userLocation.js"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Deco-Garden</title>
+  </head>
+  <body>
+    <h1>Tramitación de pedido</h1>
+    <form action="/payment" method="post">
+      <fieldset>
+        <legend>Datos comprador</legend>
+        <label for="name">Nombre</label><br>
+        <input id="name" type="text" name="name" placeholder="Introduzca su nombre"><br>
+        <label for="surname">Apellidos</label><br>
+        <input id="surname" type="text" name="surname" placeholder="Introduzca sus apellidos" size="40"><br>
+        <label for="email">Correo electrónico</label><br>
+        <input id="email" type="email" name="email" placeholder="example@example.com"><br>
+        <label for="phone">Teléfono</label><br>
+        <input id="phone" type="tel" name="phone" placeholder="e.g. (+34)677777777">
+      </fieldset>
+      <fieldset>
+        <legend>Dirección de envío</legend>
+        <label for="street">Calle
+          <label><br>
+            <input id="street" type="text" name="street" placeholder="Paseo, calle, avenida..."><br>
+            <label for="number">Nº</label>
+            <input id="number" type="text" name="number" size="3">
+            <label for="floor">Piso</label>
+            <input id="floor" type="text" value="" name="floor" size="3">
+            <label for="door">Puerta</label>
+            <input id="door" type="text" value="" name="door" size="3"><br>
+            <label for="city">Ciudad</label><br>
+            <input id="city" type="text" name="city" size="30" placeholder="e.g. Puerto Santa María"><br>
+            <label for="state">Provincia</label><br>
+            <input id="state" type="text" name="state" placeholder="e.g. Cádiz"><br>
+            <label for="country">País</label><br>
+            <input id="country" type="text" name="country" placeholder="e.g. España"><br>
+            <label for="cp">Código postal</label><br>
+            <input id="cp" type="text" name="cp" placeholder="e.g. 11500">
+          </label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Medio de pago</legend>
+        <label for="titular">Titular de la tarjeta</label>
+        <input id="titular" type="text" name="titular" size="40"><br>
+        <label for="tarjeta">Numero de tarjeta</label><br>
+        <input id="tarjeta" type="text" name="tarjeta"><br>
+        <label>Fecha de caducidad</label><br>
+        <input id="mes" type="text" name="mes" size="3">    -
+        <input id="year" type="text" name="year" size="3"><br>
+        <label for="ccv">CCV/CVC</label><br>
+        <input id="ccv" type="text" name="ccv" size="3"><br>
+        <div id="ajaxResponse" value=""></div><br>
+      </fieldset>
+      <fieldset class="submit_button">
+        <input type="submit" value="Continuar">
+      </fieldset>
+    </form>
+  </body>
+</html>

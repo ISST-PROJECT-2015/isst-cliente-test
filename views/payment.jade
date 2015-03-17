@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Deco-Garden
+  body
+    h1 Mecanismo de pago
+    div
+      form(action='/payment')
+        fieldset
+          legend Medio de pago
+          label(for='titular') Titular de la tarjeta
+          input#titular(type='text', name='titular', size='40')
+          br
+          label(for='tarjeta') Numero de tarjeta
+          br
+          input#tarjeta(type='text', name='tarjeta')
+          br
+          label Fecha de caducidad
+          br
+          input#mes(type='text', name='mes', size='3')
+          |     -
+          input#year(type='text', name='year', size='3')
+          br
+          label(for='ccv') CCV/CVC
+          br
+          input#ccv(type='text', name='ccv', size='3')
+          IVA: #{price}. 
+        .continue
+          input(type='submit', value='Continuar')
