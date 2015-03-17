@@ -1,2 +1,25 @@
 # isst-cliente-test
-Demo web cliente para localización de comprador
+
+Testing client Web to locate buyer
+
+## Instalation Guide
+
+You must have previously installed NodeJS
+
+<ol>
+	<li>Clone the repository to your workspace and change to the <code>isst-cliente-test</code> new directory</li>
+	<pre>
+		git clone https://github.com/ISST-PROJECT-2015/isst-cliente-test.git
+
+		cd isst-cliente-test
+	</pre>
+
+	<li>Install dependencies using npm and run the server</li>
+	<pre>
+		npm install
+
+		npm start
+
+	</pre>
+	
+</ol>
