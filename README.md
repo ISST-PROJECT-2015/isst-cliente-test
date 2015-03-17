@@ -2,7 +2,9 @@
 
 Testing client Web to locate buyer
 
-## Instalation Guide
+Web app using NodeJS and Express
+
+## Installation Guide
 
 You must have previously installed NodeJS
 
